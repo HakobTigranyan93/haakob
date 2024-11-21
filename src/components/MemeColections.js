@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
+import HeaderSection from "./Section/HeaderSection";
 
 function MemeColections({ newsData }) {
   const [isDragging, setIsDragging] = useState(false);
@@ -31,12 +32,15 @@ function MemeColections({ newsData }) {
 
   return (
     <div className="px-[100px] font-poppins bg-[#666666]">
-      <div className="flex justify-between items-center pt-[80px]">
-        <button className="text-[32px] text-[#e8e8e8]">See all</button>
-        <h1 className="text-[32px]  font-bold text-[#fefefe]">
-          Meme Collections
-        </h1>
-      </div>
+      <HeaderSection
+        title="Meme Collections"
+        buttonText="See all"
+        titleClass="text-[#fefefe]"
+        buttonClass="text-[#e8e8e8]"
+        containerClass="pt-[80px]"
+        reverseOrder={true}
+      />
+
       <div
         ref={containerRef}
         className="overflow-hidden pt-[50px] pb-[100px]"

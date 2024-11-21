@@ -1,19 +1,16 @@
-// Categories.js
-import React from "react";
 import HeaderSection from "./Section/HeaderSection.js";
 
 function Categories({ categoriesData }) {
   return (
     <div className="font-poppins">
       <div className="px-[100px]">
-        {/* Используем HeaderSection без изменения порядка */}
         <HeaderSection
           title="Categories"
           buttonText="See all"
           titleClass="text-[#1a1a1a]"
           buttonClass="text-[#666666]"
           containerClass="pt-[80px]"
-          reverseOrder={false} // Порядок как в исходном варианте (заголовок слева, кнопка справа)
+          reverseOrder={false}
         />
 
         <div className="pt-[50px] pb-[100px] flex justify-between gap-[20px]">

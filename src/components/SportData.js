@@ -3,7 +3,7 @@ const SportData = [
   { name: "Basketball", games: 8 },
   { name: "Tennis", games: 5 },
   { name: "Hockey", games: 3 },
-  { name: "Baseball", games: 7 }, // Новый вид спорта
+  { name: "Baseball", games: 7 },
 ];
 
 export default SportData;

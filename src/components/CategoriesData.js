@@ -1,4 +1,3 @@
-// CategoriesData.js
 const CategoriesData = [
   {
     title: "Lorem ipsum",

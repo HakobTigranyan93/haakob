@@ -1,19 +1,16 @@
-// Sport.js
-import React from "react";
 import HeaderSection from "./Section/HeaderSection";
 
 function Sport({ sportsData }) {
   return (
     <div className="bg-[#666666] font-poppins">
       <div className="px-[100px]">
-        {/* Используем HeaderSection с измененным порядком элементов */}
         <HeaderSection
           title="Sport"
           buttonText="See all"
-          titleClass="text-[#fefefe]" // Светлый цвет для заголовка
-          buttonClass="text-[#e8e8e8]" // Светлый цвет для кнопки
-          containerClass="pt-[80px]" // Стандартный отступ сверху
-          reverseOrder={true} // Меняем местами кнопку и заголовок
+          titleClass="text-[#fefefe]"
+          buttonClass="text-[#e8e8e8]"
+          containerClass="pt-[80px]"
+          reverseOrder={true}
         />
 
         <div className="pt-[50px] pb-[100px] flex flex-wrap justify-between space-x-[10px]">
